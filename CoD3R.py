@@ -2,7 +2,7 @@ import time
 from telegram.ext import Updater, CommandHandler
 
 # توکن ربات خود را اینجا وارد کنید
-TOKEN = 'YOUR_BOT_TOKEN'
+TOKEN = '6091544216:AAF_Eg59uNY29gAKv8H27_MXZXlvCDBmIBA'
 
 def start(update, context):
     update.message.reply_text('ربات آماده است!')
@@ -10,7 +10,7 @@ def start(update, context):
 def set_timer(update, context):
     context.user_data['start_time'] = time.time()
     context.user_data['remaining_time'] = 40
-    update.message.reply_text('۴۵ ثانیه به اتمام زمان باقی مانده. فقط ۵ ثانیه باقی مانده!')
+    update.message.reply_text(' فقط ۵ ثانیه زمان باقی مانده است ')
 
 def check_timer(update, context):
     if 'start_time' in context.user_data:
